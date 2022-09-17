@@ -1,12 +1,14 @@
 # Trozo-de-panceta
 Repositorio creado para la asignatura IV    
 
-## ¿Qué es Trozo de panceta y que soluciona?   
+## Problema   
+El precio de la luz varía a lo largo del día haciendo que unos tramos horarios sean mucho más caros que otros.    
+
+## ¿Qué es Trozo de panceta?   
 Trozo de panceta es una aplicación que busca ayudar a las familias a reducir el gasto diario en el consumo de la luz.   
 
 ## ¿Como lo soluciona?
-Los usuarios introducirán su ubicación y obtendrán el precio de la luz en los distintos tramos horarios del día 
-y también una serie de recomendaciones de la aplicación que aconsejará que electrodomésticos poner en cada tramo.    
+Los usuarios introducirán su ubicación, los electrodomésticos que tienen, cuales les interesa poner ese día, durante cuanto tiempo, cuantas veces y el consumo de estos y obtendrán el precio de la luz en los distintos tramos horarios del día, una aproximación del gasto diario y una agenda de como poner los distintos electrodomésticos a lo largo de ese día de forma que se reduzca el consumo.       
 
 ## Lógica de negocio:   
-Los principales clientes serán los usuarios de la aplicación.   
+Los principales clientes serán los usuarios de la aplicación los cuales pagaran una mensualidad por el uso de esta.   
