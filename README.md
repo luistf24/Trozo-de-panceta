@@ -2,14 +2,11 @@
 Repositorio creado para la asignatura IV    
 
 ## Problema   
-El precio de la luz varía a lo largo del día haciendo que unos tramos horarios sean mucho más caros que otros.    
+El precio de la luz varía en distintos tramos horarios a lo largo del día haciendo que el precio por poner un electrodoméstico sea más alto o más bajo en función de la hora. 
 
-## ¿Qué es Trozo de panceta?   
-Trozo de panceta es una aplicación que busca ayudar a las familias a reducir el gasto diario en el consumo de la luz.   
-
-## ¿Como lo soluciona?
-Mostrando los tramos diarios, una agenda para utilizar sus electrodomésticos y una aproximación del gasto diario.    
+## Solución
+A partir de los electrodomésticos del usuario que vaya a poner ese día, generar una planificación de forma que se reduzca lo máximo posible el coste.
 
 ## Lógica de negocio:   
-Los usuarios introducirán su ubicación, los electrodomésticos que tienen, cuales les interesa poner ese día, durante cuanto tiempo, cuantas veces y el consumo de estos y obtendrán el precio de la luz en los distintos tramos horarios del día, una aproximación del gasto diario y una agenda de como poner los distintos electrodomésticos a lo largo de ese día de forma que se reduzca el consumo.           
+Los usuarios introducirán su ubicación, los electrodomésticos que tienen, cuales les interesa poner ese día, durante cuanto tiempo, cuantas veces y el consumo de estos  y obtendrán un planning de como poner los distintos electrodomésticos a lo largo de ese día de forma que se reduzca el consumo lo máximo posible y en función de las tareas que hagan, una aproximación del gasto de ese día.           
 Los principales clientes serán los usuarios de la aplicación los cuales pagaran una mensualidad por el uso de esta.   
