@@ -11,7 +11,7 @@ A partir de los electrodomésticos del usuario que vaya a poner ese día, genera
 Los usuarios introducirán:    
 - Su ubicación    
 - Los electrodomésticos que tienen y su consumo   
-- Cuales les interesa poner ese día, durante cuanto tiempo y cuantas veces    
+- Cuales les interesa poner cada día, durante cuanto tiempo y cuantas veces    
 
-Obtendrán un planning de como poner los distintos electrodomésticos a lo largo de ese día de forma que se reduzca el consumo lo máximo posible y en función de las tareas que hagan, una aproximación del gasto de ese día.           
+Obtendrán un planning de como poner los distintos electrodomésticos a lo largo de la semana para ello se hará una regresión con los datos de los distintos tramos de las semanas anteriores, dado que los datos de los precios se publican el mismo día. La aplicación ajustará día a día el planning para corregir posibles fallos de la regresión obteniendo un planning óptimo diario y una predicción aproximada para los futuros días. Además se almacenarán los datos de los tramos diarios para mejorar las regresiones y los datos de los electrodomésticos de los usuarios para facilitar el registro de electrodomésticos a otros usuarios.            
 Los principales clientes serán los usuarios de la aplicación los cuales pagaran una mensualidad por el uso de esta.   
