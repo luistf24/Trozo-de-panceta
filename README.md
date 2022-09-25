@@ -11,7 +11,7 @@ A partir de los electrodomésticos del usuario que vaya a poner ese día, genera
 Los usuarios introducirán:    
 - Su ubicación (península, Ceuta y Melilla, Baleares, Canarias)    
 - Los electrodomésticos que tienen y su consumo   
-- Cuales les interesa poner cada día, durante cuanto tiempo(en función del tiempo se buscarán tramos de distinta duración) y cuantas veces    
+- Cuales les interesa poner cada día, durante cuanto tiempo (en función del tiempo se buscarán tramos de distinta duración) y cuantas veces    
 
 Obtendrán un planning de como poner los distintos electrodomésticos a lo largo de la semana para ello se hará una regresión con los datos de los distintos tramos de las semanas anteriores, dado que los datos de los precios se publican el mismo día.    
 La aplicación ajustará día a día el planning para corregir posibles fallos de la regresión obteniendo un planning óptimo diario y una predicción aproximada para los futuros días.    
