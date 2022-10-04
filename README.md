@@ -1,6 +1,14 @@
 # Trozo-de-panceta
 Repositorio creado para la asignatura IV    
 
+## Estado del proyecto:   
+En ejecución    
+
+## Documentación:  
+- [Personas](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-1/docs/personas.md)   
+- [Milestones](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-1/docs/milestones.md)   
+- [Historias de usuario](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-1/docs/user-stories.md)    
+
 ## Problema   
 El precio de la luz varía en distintos tramos horarios a lo largo del día haciendo que el precio por poner un electrodoméstico sea más alto o más bajo en función de la hora. 
 
