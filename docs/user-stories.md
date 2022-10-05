@@ -1,6 +1,6 @@
 # **Historias de usuario**   
 
-- [HU0] Los usuarios quieren saber cuando poner los electrodomésticos para ahorrar dinero.   
+- [HU0] Los usuarios quieren saber cuando poner los electrodomésticos para ahorrar dinero a lo largo de la semana.   
 	- [HU4] Mario quiere saber cuando poner las máquinas que realizan tareas automáticas para ahorrar  
 
 - [HU1] Los usuarios quieren obtener una planificación óptima para ese día   
