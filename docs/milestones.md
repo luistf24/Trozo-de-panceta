@@ -1,12 +1,12 @@
 # **Milestones:**   
 
-* [ ] **[M0]:** Estructura de datos para representar a los electrodomésticos.    
-	* Esta estructura debe contener todo lo necesario para identificar a un electrodoméstico siendo especialmente relevante su consumo medio por hora.    
+* [ ] **[M0]:** Clase para representar a los electrodomésticos.    
+	* Esta clase debe contener todo lo necesario para identificar a un electrodoméstico siendo especialmente relevante su consumo medio por hora.    
 
 * [ ] **[M1]:** Crear base de datos para almacenar la información de los distintos electrodomésticos de los usuarios    
 
-* [ ] **[M2]:** Estructura de datos para representar los tramos horarios.
-	* Esta estructura servirá para agrupar los electrodomésticos (**M0**) en los distintos tramos horarios de la semana y también deberá tener el consumo medio de los distintos electrodomésticos que haya.
+* [ ] **[M2]:** Clase para representar los tramos horarios.
+	* Esta clase servirá para agrupar los electrodomésticos (**M0**) en los distintos tramos horarios de la semana y también deberá tener el consumo medio de los distintos electrodomésticos que haya.
 
 * [ ] **[M3]** Función para obtener el precio del tramo horario del día (solo salen los datos del mismo día)
 
