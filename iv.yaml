@@ -1,4 +1,6 @@
 lenguaje: Go
+
 entidad:
   - appliance.go
   - user.go
+  
