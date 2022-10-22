@@ -1,2 +1,4 @@
 lenguaje: Go
-entidad: 
+entidad:
+  - appliance.go
+  - user.go
