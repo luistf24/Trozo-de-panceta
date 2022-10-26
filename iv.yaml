@@ -1,5 +1,6 @@
 lenguaje: Go
 
 entidad:
-  - appliance.go
-  - user.go
+  - src/appliance.go
+  - src/user.go
+  - src/time_bracket.go
