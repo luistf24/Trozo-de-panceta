@@ -1,10 +1,7 @@
 package trozo_de_panceta
 
-import (
-	"time"
-)
-
 type Time_Bracket struct {
-	Date time.Time
-	Appliances []Appliance
+	Day int
+	Hour int
+	Appliance []Appliance
 }

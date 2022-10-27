@@ -1,8 +1,7 @@
 package trozo_de_panceta
 
 type User struct {
-	Id int
-	Name string
-	Last_Name string
-	Appliances []Appliance
+	Name string `json:"name"`
+	Last_Name string `json:"last_name"`
+	Appliances []Appliance `json:"appliances"`
 }
