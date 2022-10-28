@@ -16,16 +16,3 @@ func NewAppliance(name string, brand string, model string, consumption int) Appl
 		Consumption: consumption,
 	}
 }
-
-
-// Search for an appliance in API
-func ExistAppliance(model string) bool {
-	// TODO
-	return true;
-}
-
-// Add an appliance to the user
-func AddAppliance(name string, brand string, model string, consumption int) bool {
-	// TODO
-	return true;
-}
