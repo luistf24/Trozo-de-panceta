@@ -7,14 +7,25 @@ type Appliance struct {
 	Consumption int `json:"consumption"`
 }
 
+// Create a new Appliance
+func NewAppliance(name string, brand string, model string, consumption int) Appliance {
+	return Appliance {
+		Name: name,
+		Brand: brand,
+		Model: model,
+		Consumption: consumption,
+	}
+}
+
+
 // Search for an appliance in API
-func (a *Appliance) ExistAppliance(model string) Appliance {
+func ExistAppliance(model string) bool {
 	// TODO
-	return *a
+	return true;
 }
 
 // Add an appliance to the user
-func (a *Appliance) AddAppliance(name string, brand string, model string, consumption int) Appliance {
+func AddAppliance(name string, brand string, model string, consumption int) bool {
 	// TODO
-	return *a
+	return true;
 }

@@ -1,6 +1,7 @@
 lenguaje: Go
 
+objeto valor: src/appliance.go
+
 entidad:
-  - src/appliance.go
   - src/user.go
   - src/time_bracket.go
