@@ -1,6 +1,2 @@
 lenguaje: Go
-
-entidad:
-  - internal/appliance.go
-  - internal/user.go
-  - internal/time_bracket.go
+entidad: internal/appliance.go
