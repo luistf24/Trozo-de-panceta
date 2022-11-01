@@ -1,4 +1,4 @@
-package appliance
+package internal
 
 type Appliance struct {
 	Brand string
