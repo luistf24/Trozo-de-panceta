@@ -5,7 +5,7 @@ type User struct {
 }
 
 // Function that allow a user to add its appliances
-func (u *User) AddNewAppliance(brand string, model string, consumption int, category string, duration int) {
-	newappliance := NewAppliance(brand, model, consumption, category, duration)
+func (u *User) AddNewAppliance(name string, consumption int, duration int) {
+	newappliance := NewAppliance(name, consumption, duration)
 	u.Appliances = append(u.Appliances, newappliance)
 }

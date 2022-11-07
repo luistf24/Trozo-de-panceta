@@ -1,18 +1,15 @@
 package internal
 
 type Appliance struct {
-	Brand string
-	Model string
+	Name string
 	Consumption int
-	Category string
 	Duration int
 }
 
-func NewAppliance(brand string, model string, consumption int, category string, duration int) Appliance {
+func NewAppliance(name string, consumption int, duration int) Appliance {
 	return Appliance {
-		Brand: brand,
-		Model: model,
+		Name: name,
 		Consumption: consumption,
-		Category: category,
+		Duration: duration,
 	}
 }
