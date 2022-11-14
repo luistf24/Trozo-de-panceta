@@ -25,3 +25,15 @@ Obtendrán un planning de como poner los distintos electrodomésticos a lo largo
 La aplicación ajustará día a día el planning para corregir posibles fallos de la regresión obteniendo un planning óptimo diario y una predicción aproximada para los futuros días.    
 Además se almacenarán los datos de los tramos diarios para mejorar las regresiones y los datos de los electrodomésticos de los usuarios para facilitar el registro de electrodomésticos a otros usuarios.            
 Los principales clientes serán los usuarios de la aplicación los cuales pagaran una mensualidad por el uso de esta.   
+
+## Herramientas utilizadas:     
+- **Lenguaje de programación:** Go      
+- **Task manager:** Make     
+	- Instrucciones:     
+		- ``opcion build`` -> Construye el proyecto    
+		- ``opcion installdeps`` -> Instala las dependencias necesarias para el proyecto y limpia las que no     
+		- ``opcion run`` -> Ejecuta el programa     
+		- ``opcion clean`` -> Limpia el proyecto     
+		- ``opcion check`` -> Analiza la sintaxis de todo el código usado en el proyecto     
+		- ``opcion test`` -> Ejecuta todos los test del fichero, tienen que ser de la forma: nombre_test.go     
+		- ``opcion help`` -> Imprime un mensaje con todas las opciones disponibles     
