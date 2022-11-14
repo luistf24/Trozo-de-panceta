@@ -32,6 +32,12 @@ build:
 	go build -o $(BIN)/$(BINARY_NAME) $(MAIN)
 
 
+# Instalación de las dependencias
+installdeps:
+	@echo -e "Instalando las dependencias ..."
+	go mod tidy
+
+
 # Ejecutar el programa
 run:
 	./$(BIN)/$(BINARY_NAME)
@@ -41,7 +47,6 @@ run:
 clean:
 	@echo -e "Limpiando los binarios ..."
 	rm $(BIN)/$(BINARY_NAME)
-	go tidy -v 
 	go clean ./...
 
 
