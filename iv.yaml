@@ -5,6 +5,6 @@ entidad:
   - internal/time_bracket.go
 
 automatizar:
-  - fichero: Makefile
-  - orden: make
+  fichero: Makefile
+  orden: make
 
