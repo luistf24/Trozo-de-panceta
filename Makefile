@@ -20,6 +20,7 @@ MAIN = ./cmd/trozo-de-panceta/main.go
 BIN = ./bin
 
 
+
 #
 # Instrucciones
 #
@@ -40,6 +41,31 @@ run:
 clean:
 	@echo -e "Limpiando los binarios ..."
 	rm $(BIN)/$(BINARY_NAME)
+	go tidy -v 
 	go clean ./...
+
+
+# Comprobación de la sintaxis
+check:
+	@echo -e "Comprobando sintaxis del proyecto ..."
+	go vet ./...
+
+
+# Ejecución de todos los tests del proyecto
+test:
+	@echo -e "Ejecutando tests ..."
+	go test ./...
+
+
+# Imprime mensaje con las distintas opciones del Makefile
+help:
+	@echo -e "Las opciones disponibles son:"
+	@echo -e "  - make build "
+	@echo -e "  - make installdeps"
+	@echo -e "  - make run"
+	@echo -e "  - make clean"
+	@echo -e "  - make check"
+	@echo -e "  - make test"
+	@echo -e "  - make help"
 
 
