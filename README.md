@@ -30,10 +30,10 @@ Los principales clientes serán los usuarios de la aplicación los cuales pagara
 - **Lenguaje de programación:** Go      
 - **Task manager:** Make     
 	- Instrucciones:     
-		- ``opcion build`` -> Construye el proyecto    
-		- ``opcion installdeps`` -> Instala las dependencias necesarias para el proyecto y limpia las que no     
-		- ``opcion run`` -> Ejecuta el programa     
-		- ``opcion clean`` -> Limpia el proyecto     
-		- ``opcion check`` -> Analiza la sintaxis de todo el código usado en el proyecto     
-		- ``opcion test`` -> Ejecuta todos los test del fichero, tienen que ser de la forma: nombre_test.go     
-		- ``opcion help`` -> Imprime un mensaje con todas las opciones disponibles     
+		- ``make build`` -> Construye el proyecto    
+		- ``make installdeps`` -> Instala las dependencias necesarias para el proyecto y limpia las que no     
+		- ``make run`` -> Ejecuta el programa     
+		- ``make clean`` -> Limpia el proyecto     
+		- ``make check`` -> Analiza la sintaxis de todo el código usado en el proyecto     
+		- ``make test`` -> Ejecuta todos los test del fichero, tienen que ser de la forma: nombre_test.go     
+		- ``make help`` -> Imprime un mensaje con todas las opciones disponibles     
