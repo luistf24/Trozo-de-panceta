@@ -13,8 +13,8 @@ SHELL = /bin/bash
 # Nombre del archivo binario
 BINARY_NAME=trozo-de-panceta
 
-# Ubicación donde irá main
-MAIN = ./cmd/trozo-de-panceta/main.go
+# Ubicación donde irá main, añadir cuando se requiera
+MAIN = 
 
 # Ubicación donde irá el binario
 BIN = ./bin
@@ -53,7 +53,7 @@ clean:
 # Comprobación de la sintaxis
 check:
 	@echo -e "Comprobando sintaxis del proyecto ..."
-	go vet ./...
+	go build -v -o /dev/null ./...
 
 
 # Ejecución de todos los tests del proyecto
