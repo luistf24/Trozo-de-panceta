@@ -13,8 +13,6 @@ SHELL = /bin/bash
 # Nombre del archivo binario
 BINARY_NAME=trozo-de-panceta
 
-# Ubicación donde irá main, añadir cuando se requiera
-MAIN = 
 
 # Ubicación donde irá el binario
 BIN = ./bin
@@ -25,52 +23,37 @@ BIN = ./bin
 # Instrucciones
 #
 
+help: # Imprime mensaje con las distintas opciones del Makefile
+	@grep -E '^[a-zA-Z0-9 -]+:.*#'  Makefile | sort | while read -r l; do printf "\033[1;32m$$(echo $$l | cut -f 1 -d':')\033[00m:$$(echo $$l | cut -f 2- -d'#')\n"; done
 
-# Construir el programa principal
-build:
+
+build: # Construir el programa principal
 	@echo -e "Construyendo el proyecto ..."
-	go build -o $(BIN)/$(BINARY_NAME) $(MAIN)
+	go build 
 
 
-# Instalación de las dependencias
-installdeps:
+installdeps: # Instalación de las dependencias
 	@echo -e "Instalando las dependencias ..."
 	go mod tidy
 
 
-# Ejecutar el programa
-run:
+run: # Ejecutar el programa
 	./$(BIN)/$(BINARY_NAME)
 
 
-# Limpiar el proyecto
-clean:
+clean: # Limpiar el proyecto
 	@echo -e "Limpiando los binarios ..."
 	rm $(BIN)/$(BINARY_NAME)
 	go clean ./...
 
 
-# Comprobación de la sintaxis
-check:
+check: # Comprobación de la sintaxis
 	@echo -e "Comprobando sintaxis del proyecto ..."
 	go build -v -o /dev/null ./...
 
 
-# Ejecución de todos los tests del proyecto
-test:
+test: # Ejecución de todos los tests del proyecto
 	@echo -e "Ejecutando tests ..."
 	go test ./...
-
-
-# Imprime mensaje con las distintas opciones del Makefile
-help:
-	@echo -e "Las opciones disponibles son:"
-	@echo -e "  - make build "
-	@echo -e "  - make installdeps"
-	@echo -e "  - make run"
-	@echo -e "  - make clean"
-	@echo -e "  - make check"
-	@echo -e "  - make test"
-	@echo -e "  - make help"
 
 
