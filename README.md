@@ -8,7 +8,8 @@ En ejecución
 - [Personas](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-1/docs/personas.md)   
 - [Milestones](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-1/docs/milestones.md)   
 - [Historias de usuario](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-1/docs/user-stories.md)    
-- [Gestor de tareas](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-3/docs/user-stories.md)    
+- [Gestor de tareas](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-3/docs/gestor-de-tareas.md)    
+- [Gestor de dependencias](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-3/docs/gestor-de-dependencias.md)    
 
 ## Problema   
 El precio de la luz varía en distintos tramos horarios a lo largo del día haciendo que el precio por poner un electrodoméstico sea más alto o más bajo en función de la hora. 
