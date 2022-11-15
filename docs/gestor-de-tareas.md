@@ -1,5 +1,7 @@
 # Gestor de tareas:
-Para automatizar las tereas he mirado distintos gestores de tareas:
+
+El lenguaje que he utilizado para el proyecto es Go, por lo que el gestor de tareas a buscar, se tiene que ajustar a dicho lenguaje como sería en que no haya problemas con la jerarquía del proyecto, que no esté desarrollado para un lenguaje en específico, que sea eficiente, sencillo de usar y se ajuste bien al tamaño del proyecto sin que le penalice el tamaño de este.    
+De los que he buscado, los más destacables son:
 - **Mask:**  Mask es un gestor de tareas que está en markdown y este es uno de sus puntos fuertes, además al estar escrito en Rust su instalación es muy sencilla usando cargo, se le puede inyectar código en diversos lenguajes, lo que puede facilitar mucho las cosas.     
 
 - **Make:** Make es un gestor de tareas que vienen por defecto en muchas distribuciones linux, es fácil de usar contiene reglas de dependencia, macros y las suffix rules. Además comprueba las fechas de modificación compilando solo los archivos que han sido actualizados reduciendo el tiempo de compilación.    
