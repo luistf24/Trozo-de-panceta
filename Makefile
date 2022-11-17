@@ -18,6 +18,8 @@ BINARY_NAME=trozo-de-panceta
 BIN = ./bin
 
 
+# Ubicación donde irá el código
+CODE_FOLDERS = internal/*
 
 #
 # Instrucciones
@@ -49,8 +51,7 @@ clean: # Limpiar el proyecto
 
 check: # Comprobación de la sintaxis
 	@echo -e "Comprobando sintaxis del proyecto ..."
-	go build -v -o /dev/null ./...
-
+	 gofmt -l $(CODE_FOLDERS)
 
 test: # Ejecución de todos los tests del proyecto
 	@echo -e "Ejecutando tests ..."
