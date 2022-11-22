@@ -1,4 +1,5 @@
 # **Gestor de dependencias**
 
-Para el gestor de dependencias he elegido Go Modules, está disponible para versiones de Go >= 1.16 y permite tener un control de las versiones de las dependencias, automatizar su instalación y limpiarlas cuando se dejan de usar de una forma muy fácil.   
-Desde esta versión es el que más se utiliza.
+Los gestores de dependencias más usados en go son: **Vendoring**, **Dep** y **Go Modules**   
+Me he decantado por **Go Modules** ya que con **Vendoring** hacer upgrade y downgrade de un paquete puede ser muy complejo, puede no funcionar para las versiones de algunos paquetes e incrementa el tamaño del código y con **Dep** tenemos que no es nativo, puede tener problemas con las interdependencias y no se describe muy bien cuales dependencias son directas e indirectas.     
+**Go Modules** no tiene ninguno de estos problemas, además es el más utilizado.
