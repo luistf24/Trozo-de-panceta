@@ -1,18 +1,17 @@
 # Gestor de tareas:
 
-El lenguaje que he utilizado para el proyecto es Go, por lo que el gestor de tareas a buscar, se tiene que ajustar a dicho lenguaje como sería en que no haya problemas con la jerarquía del proyecto, que no esté desarrollado para un lenguaje en específico, que sea eficiente, sencillo de usar y se ajuste bien al tamaño del proyecto sin que le penalice el tamaño de este.    
-De los que he buscado, los más destacables son:
-- **Mask:**  Mask es un gestor de tareas que está en markdown y este es uno de sus puntos fuertes, además al estar escrito en Rust su instalación es muy sencilla usando cargo, se le puede inyectar código en diversos lenguajes, lo que puede facilitar mucho las cosas.     
+El lenguaje que he utilizado para el proyecto es Go, de los gestores de tareas que he buscado, los más destacables son:   
+- **Mask:**  Mask es un gestor de tareas que usa sintaxis en markdown y este es uno de sus puntos fuertes, además al estar escrito en Rust su instalación es muy sencilla usando cargo, se le puede inyectar código en diversos lenguajes, lo que puede facilitar mucho las cosas.     
 
 - **Make:** Make es un gestor de tareas que vienen por defecto en muchas distribuciones linux, es fácil de usar contiene reglas de dependencia, macros y las suffix rules. Además comprueba las fechas de modificación compilando solo los archivos que han sido actualizados reduciendo el tiempo de compilación.    
 
 - **Task:** Task es un task runner diseñado para ser más simple y más fácil de usar que Make. Está escrito en go y entre sus ventajas están que es fácil de instalar, multiplataforma y al igual que make busca reducir el tiempo de compilación, compilando aquellos archivos que han sido modificados, además sus archivos de configuración son ``.yml`` lo que hace que sean muy legibles.     
 
 ## **Elección del gestor de tareas:**   
-Los tres gestores de tareas son más que suficientes para mi proyecto, ya que el usar go facilita mucho las cosas ya que no voy a tener que escribir ordenes muy complejas para automatizar las tareas y los tres se ajustan bien al lenguaje.  
+Los tres gestores de tareas son más que suficientes para mi proyecto, ya que el usar go facilita mucho las cosas ya que no voy a tener que escribir ordenes muy complejas para automatizar las tareas, la elección la he tomado en base a su complejidad y a las herramientas que ofrecen.  
 
-**Mask** fué una opción que sopesé, es fácil de instalar y usa Markdown, lo cual facilita mucho el aprendizaje de este, pero a pesar de ello ofrece demasiado para lo que yo busco y además la  notación y las reglas por mucho que estén en markdown me dejaba un archivo de configuración poco legible.     
+**Mask** fué una opción que sopesé, es fácil de instalar y usa sintaxis en Markdown, lo cual facilita mucho el aprendizaje de este, pero a pesar de ello ofrece demasiado para lo que yo busco y además la  notación y las reglas por mucho que estén en markdown me dejaba un archivo de configuración poco legible haciendolo más complejo de lo que me esperaba, por lo que no me he decantado por el.     
 
-El siguiente fue **Task** y este me convenció mucho más, es muy similar a Make en lo bueno pero usa yml, si bien el archivo de configuración es muy legible y fácil de entender no acaba de tener todo lo que ofrece Make, como el uso de variables, macros, o por lo menos yo no he encontrado como hacerlo.     
+El siguiente fue **Task** y este me convenció mucho más, es muy similar a Make en lo bueno pero usa yml, si bien el archivo de configuración es muy legible y fácil de entender no acaba de tener todo lo que ofrece Make, como el uso de variables, macros, o por lo menos yo no he encontrado como hacerlo, por lo que tampoco me he decantado por el.     
 
 Al final me decanté por **Make**, es algo más complejo que Task pero quizá porque ya venía de haberlo usado antes, me ha resultado mucho más comodo usarlo, y si bien tiene esa complejidad extra en muchos aspectos, para lo exigido en mi proyecto no aparece.
