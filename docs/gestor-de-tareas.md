@@ -1,14 +1,11 @@
-# Gestor de tareas:
+# Gestor de tareas:    
+## **Búsqueda del gestor de tareas:**   
+En la búsqueda me he centrado en cualquier gestor de tareas que pueda utilizar con go.   
 
-El lenguaje que he utilizado para el proyecto es Go, de los gestores de tareas que he buscado, los más destacables son:   
-- **Mask:**  Mask es un gestor de tareas que usa sintaxis en markdown y este es uno de sus puntos fuertes, además al estar escrito en Rust su instalación es muy sencilla usando cargo, se le puede inyectar código en diversos lenguajes, lo que puede facilitar mucho las cosas.     
-
-- **Make:** Make es un gestor de tareas que vienen por defecto en muchas distribuciones linux, es fácil de usar contiene reglas de dependencia, macros y las suffix rules. Además comprueba las fechas de modificación compilando solo los archivos que han sido actualizados reduciendo el tiempo de compilación.    
-
-- **Task:** Task es un task runner diseñado para ser más simple y más fácil de usar que Make. Está escrito en go y entre sus ventajas están que es fácil de instalar, multiplataforma y al igual que make busca reducir el tiempo de compilación, compilando aquellos archivos que han sido modificados, además sus archivos de configuración son ``.yml`` lo que hace que sean muy legibles.     
+Los candidatos que encontré fueron: **Mask**, **Task** y **Make**   
 
 ## **Elección del gestor de tareas:**   
-Los tres gestores de tareas son más que suficientes para mi proyecto, ya que el usar go facilita mucho las cosas ya que no voy a tener que escribir ordenes muy complejas para automatizar las tareas, la elección la he tomado en base a su complejidad y a las herramientas que ofrecen.  
+La elección la he tomado en base a su complejidad y a las herramientas que ofrecen.  
 
 **Mask** fué una opción que sopesé, es fácil de instalar y usa sintaxis en Markdown, lo cual facilita mucho el aprendizaje de este, pero a pesar de ello ofrece demasiado para lo que yo busco y además la  notación y las reglas por mucho que estén en markdown me dejaba un archivo de configuración poco legible haciendolo más complejo de lo que me esperaba, por lo que no me he decantado por el.     
 
