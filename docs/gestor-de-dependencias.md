@@ -1,5 +1,5 @@
 # **Gestor de dependencias**
 
-Los gestores de dependencias más usados en go son: **Vendoring**, **Dep** y **Go Modules**   
-Me he decantado por **Go Modules** ya que con **Vendoring** hacer upgrade y downgrade de un paquete puede ser muy complejo, puede no funcionar para las versiones de algunos paquetes e incrementa el tamaño del código y con **Dep** tenemos que no es nativo, puede tener problemas con las interdependencias y no se describe muy bien cuales dependencias son directas e indirectas.     
-**Go Modules** no tiene ninguno de estos problemas, además es el más utilizado.
+La gestión de dependencias en go es semidescentralizada, permitiendo tratar a cada repositorio de git como un módulo más. No existe un gestor de dependencias como tal, y lo que se usa es **Go Module** donde las dependencias van en los archivos ``go.mod`` donde se define los module path de un módulo y los requisitos de las dependencias y los archivos ``go.sum`` que se encargan de gestionar nuestras versiones e indicar el hash de integridad de cada una de ellas.   
+
+Para usarlo: ``go mod tidy``
