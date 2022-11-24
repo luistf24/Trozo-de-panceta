@@ -1,5 +1,5 @@
 # Gestor de tareas:    
-En la búsqueda me he centrado en cualquier gestor de tareas que pueda utilizar con go y la elección la he tomado en base a su complejidad y a las herramientas que ofrecen.   
+En la búsqueda me he centrado en cualquier gestor de tareas que pueda utilizar con go y la elección la he tomado en base a su complejidad y a las funcionalidades que ofrecen.   
 
 ## **Búsqueda del gestor de tareas:**   
 Los candidatos que encontré fueron: **Mask**, **Task** y **Make**   
