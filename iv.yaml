@@ -1,2 +1,10 @@
 lenguaje: Go
-entidad: internal/appliance.go
+
+entidad:
+  - internal/appliance.go
+  - internal/time_bracket.go
+
+automatizar:
+  fichero: Makefile
+  orden: make
+
