@@ -1,14 +1,15 @@
 package internal
 
 import (
+	"encoding/json"
+	"io/ioutil"
 	"testing"
-	"net/http"
+
 	"github.com/stretchr/testify/assert"
-	"fmt"
 )
 
 func TestGetApi(t *testing.T) {
-	response, err := http.Get("https://api.preciodelaluz.org/v1/prices/all?zone=PCB")
+	response, err := ioutil.ReadFile("./test.json")
 
 	var mensaje string
 	var test bool
@@ -16,14 +17,15 @@ func TestGetApi(t *testing.T) {
 	test = true
 
 	if err != nil {
-		mensaje = "Error al establecer la conexión con la API"
+		mensaje = "Error al abrir el json"
 		test = false
 	}
 
-	defer response.Body.Close()
+	var bracket Bracket
 
-	if response.StatusCode != http.StatusOK {
-		mensaje = "Error al obtener los datos de la API"
+	err = json.Unmarshal(response, &bracket)
+	if err != nil {
+		mensaje = "Error durante Unmarshal"
 		test = false
 	}
 
@@ -31,8 +33,6 @@ func TestGetApi(t *testing.T) {
 }
 
 func TestIsEmpty(t *testing.T) {
-
-	fmt.Print(generate())
 	assert.NotEqual(t, len(generate().brackets), 0, "No hay datos almacenados de la API")
 }
 
