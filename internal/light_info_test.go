@@ -7,6 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+
 var temp LightInfo
 
 func TestGetApi(t *testing.T) {
@@ -45,18 +46,13 @@ func TestSize(t *testing.T) {
 
 
 func TestGenerateTimeBracketTime(t * testing.T) {
-	var test bool
-	switch temp.getTimeBracketTime(0).(type) {
-		case TimeBracket:
-			test = true
-		default:
-			test = false
-	}
+	var time TimeBracket
+	time = temp.generateTimeBracket(0)
 
-	assert.False(t, test, "No se ha generado un TimeBracket")
+	assert.Equal(t, time.Hour, 0, "Algo ha fallado en la generación TimeBracket")
 }
 
 
 func TestSizeTimeBracketList(t *testing.T) {
-	assert.Equal(t, 24, len(temp.getTimeBracketList()), "El número de elementos generados por la función getTimeBracketList tiene que ser 24")
+	assert.Equal(t, 24, len(temp.generateTimeBracketList()), "El número de elementos generados por la función getTimeBracketList tiene que ser 24")
 }
