@@ -43,3 +43,20 @@ func TestSize(t *testing.T) {
 	assert.Equal(t, 24, len(temp.brackets), "El número de elementos almacenados de la API tiene que ser 24")
 }
 
+
+func TestGenerateTimeBracketTime(t * testing.T) {
+	var test bool
+	switch temp.getTimeBracketTime(0).(type) {
+		case TimeBracket:
+			test = true
+		default:
+			test = false
+	}
+
+	assert.False(t, test, "No se ha generado un TimeBracket")
+}
+
+
+func TestSizeTimeBracketList(t *testing.T) {
+	assert.Equal(t, 24, len(temp.getTimeBracketList()), "El número de elementos generados por la función getTimeBracketList tiene que ser 24")
+}
