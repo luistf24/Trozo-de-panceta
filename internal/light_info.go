@@ -91,3 +91,32 @@ func (l *LightInfo) generate() LightInfo{
 
 	return *l
 }
+
+
+func (l *LightInfo) generateTimeBracket(i int) TimeBracket {
+
+	var out TimeBracket
+	if(i<24 && i>=0) {
+		out.Hour	= i
+		out.Price	= l.brackets[i]
+		return out
+	}
+
+	//Hago hour 24 porque como nunca va a valer eso me sirve para indicar que hay un error 
+	out.Hour = 24
+	return out
+}
+
+func (l *LightInfo) generateTimeBracketList() [24]TimeBracket {
+	var out [24]TimeBracket
+	var temp TimeBracket
+
+	for hora, precio := range l.brackets {
+		temp.Hour	= hora
+		temp.Price	= precio
+
+		out[hora] = temp
+	}
+
+	return out
+}
