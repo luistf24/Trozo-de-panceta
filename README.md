@@ -41,3 +41,6 @@ Los principales clientes serán los usuarios de la aplicación los cuales pagara
 		- ``make check`` -> Analiza la sintaxis de todo el código usado en el proyecto     
 		- ``make test`` -> Ejecuta todos los test del fichero, tienen que ser de la forma: nombre_test.go     
 		- ``make help`` -> Imprime un mensaje con todas las opciones disponibles     
+- **Test runner:** Go test    
+- **Biblioteca de aserciones:** Testify    
+
