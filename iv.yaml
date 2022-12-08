@@ -7,3 +7,5 @@ automatizar:
   fichero: Makefile
   orden: make
 
+test:
+  - internal/light_info_test.go
