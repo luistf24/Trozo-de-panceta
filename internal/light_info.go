@@ -54,16 +54,3 @@ func (l *LightInfo) generateTimeBracket(i int) TimeBracket {
 	return out
 }
 
-func (l *LightInfo) generateTimeBracketList() [24]TimeBracket {
-	var out [24]TimeBracket
-	var temp TimeBracket
-
-	for hora, precio := range l.brackets {
-		temp.Hour	= hora
-		temp.Price	= precio
-
-		out[hora] = temp
-	}
-
-	return out
-}

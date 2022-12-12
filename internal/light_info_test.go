@@ -49,10 +49,7 @@ func TestGenerateTimeBracketTime(t * testing.T) {
 	var time TimeBracket
 	time = temp.generateTimeBracket(0)
 
-	assert.Equal(t, time.Hour, 0, "Algo ha fallado en la generación TimeBracket")
+	assert.Equal(t, time.Hour, 0, "La hora no se ha almacenado correctamente en el tramo horario")
 }
 
 
-func TestSizeTimeBracketList(t *testing.T) {
-	assert.Equal(t, 24, len(temp.generateTimeBracketList()), "El número de elementos generados por la función getTimeBracketList tiene que ser 24")
-}
