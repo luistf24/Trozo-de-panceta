@@ -28,8 +28,11 @@ func TestSize(t *testing.T) {
 
 
 func TestGenerateTimeBracketTime(t * testing.T) {
-	var time TimeBracket
-	time = temp.generateTimeBracket(0)
+	time, err := temp.generateTimeBracket(0)
+
+	if err != nil {
+		t.Fatal(err)
+	}
 
 	assert.Equal(t, time.Hour, 0, "La hora no se ha almacenado correctamente en el tramo horario")
 }

@@ -42,16 +42,15 @@ func (l *LightInfo) generate(file string) (LightInfo, error){
 }
 
 
-func (l *LightInfo) generateTimeBracket(i int) TimeBracket {
+func (l *LightInfo) generateTimeBracket(i int) (TimeBracket, error) {
 
 	var out TimeBracket
 	if(i<24 && i>=0) {
 		out.Hour	= i
 		out.Price	= l.brackets[i]
-		return out
+		return out, nil
 	}
 
-	out.Hour = 24
-	return out
+	return out, &errorGenerateTimeBracket{"la hora introducida no es correcta"}
 }
 
