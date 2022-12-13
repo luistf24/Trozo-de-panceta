@@ -19,9 +19,9 @@ type Price struct {
 }
 
 
-func (l *LightInfo) generate() LightInfo{
+func (l *LightInfo) generate(file string) LightInfo{
 
-	info, err := ioutil.ReadFile("./test.json")
+	info, err := ioutil.ReadFile(file)
 	if err != nil {
 		fmt.Print("Error al abrir el JSON")
 	}

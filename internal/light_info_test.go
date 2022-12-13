@@ -17,7 +17,7 @@ func TestGetApi(t *testing.T) {
 
 	test = true
 
-	response, err := ioutil.ReadFile("./test.json")
+	response, err := ioutil.ReadFile("../api/test.json")
 	if err != nil {
 		mensaje = "Error al abrir el json"
 		test = false
@@ -36,7 +36,7 @@ func TestGetApi(t *testing.T) {
 
 
 func TestIsEmpty(t *testing.T) {
-	assert.NotEqual(t, len(temp.generate().brackets), 0, "No hay datos almacenados de la API")
+	assert.NotEqual(t, len(temp.generate("../api/test.json").brackets), 0, "No hay datos almacenados de la API")
 }
 
 
