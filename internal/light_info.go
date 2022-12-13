@@ -2,7 +2,6 @@ package internal
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 )
 
@@ -19,16 +18,19 @@ type Price struct {
 }
 
 
-func (l *LightInfo) generate(file string) LightInfo{
+func (l *LightInfo) generate(file string) (LightInfo, error){
 
 	info, err := ioutil.ReadFile(file)
 	if err != nil {
-		fmt.Print("Error al abrir el JSON")
+		return *l, &errorGenerateLightInfo{"error leyendo el archivo json"}
 	}
 
 	var responseObject Bracket
 
-	json.Unmarshal(info, &responseObject)
+	err = json.Unmarshal(info, &responseObject)
+	if err != nil {
+		return *l, &errorGenerateLightInfo{"error haciendo Unmarshal del json"}
+	}
 
 	var temporal [24]float32
 	for index, element := range responseObject.Prueba {
@@ -36,7 +38,7 @@ func (l *LightInfo) generate(file string) LightInfo{
 	}
 
 	l.brackets = temporal
-	return *l
+	return *l, nil
 }
 
 
@@ -49,7 +51,6 @@ func (l *LightInfo) generateTimeBracket(i int) TimeBracket {
 		return out
 	}
 
-	//Hago hour 24 porque como nunca va a valer eso me sirve para indicar que hay un error 
 	out.Hour = 24
 	return out
 }

@@ -1,8 +1,6 @@
 package internal
 
 import (
-	"encoding/json"
-	"io/ioutil"
 	"testing"
 	"github.com/stretchr/testify/assert"
 )
@@ -10,33 +8,17 @@ import (
 
 var temp LightInfo
 
-func TestGetApi(t *testing.T) {
+func TestErrorLightInfo(t *testing.T) {
+	_, err := temp.generate("../api/test.json")
 
-	var mensaje string
-	var test bool
-
-	test = true
-
-	response, err := ioutil.ReadFile("../api/test.json")
 	if err != nil {
-		mensaje = "Error al abrir el json"
-		test = false
+		t.Fatal(err)
 	}
-
-	var bracket Bracket
-
-	err = json.Unmarshal(response, &bracket)
-	if err != nil {
-		mensaje = "Error durante Unmarshal"
-		test = false
-	}
-
-	assert.Equal(t, true, test, mensaje)
 }
 
 
 func TestIsEmpty(t *testing.T) {
-	assert.NotEqual(t, len(temp.generate("../api/test.json").brackets), 0, "No hay datos almacenados de la API")
+	assert.NotEqual(t, len(temp.brackets), 0, "No hay datos almacenados de la API")
 }
 
 
