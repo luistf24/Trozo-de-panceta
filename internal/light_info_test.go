@@ -9,7 +9,7 @@ import (
 var temp LightInfo
 
 func TestErrorLightInfo(t *testing.T) {
-	_, err := temp.generate("../api/test.json")
+	_, err := temp.generate("../data/test.json")
 
 	if err != nil {
 		t.Fatal(err)

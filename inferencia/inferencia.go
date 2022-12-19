@@ -12,7 +12,7 @@ import (
  *	salida[3] -> Varianza de Y
  *	salida[4] -> Covarianza de X y de Y
  */
-func calcReq(x []float32, y[]float32)([5]float32, error) {
+func calculateRequisites(x []float32, y[]float32)([5]float32, error) {
 	var salida [5]float32
 	tamX := len(x)
 	tamY := len(y)
@@ -57,8 +57,8 @@ func calcReq(x []float32, y[]float32)([5]float32, error) {
 
 
 
-func calcRR(x []float32, y[]float32)(func(int)float32, error) {
-	datos, err := calcReq(x,y)
+func calculateRegressionLine(x []float32, y[]float32)(func(int)float32, error) {
+	datos, err := calculateRequisites(x,y)
 
 	if err != nil {
 		return nil, &errorCalcRR{" erro calculando los datos necesarios usando la función calcReq"}
@@ -66,5 +66,5 @@ func calcRR(x []float32, y[]float32)(func(int)float32, error) {
 
 	return func(t int) float32 {
         return datos[4]*(float32(t)-datos[0])/datos[2]+datos[1]
-    }, nil
+	}, nil
 }
