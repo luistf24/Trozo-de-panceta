@@ -55,4 +55,6 @@ func TestCalcRR(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+
+	assert.LessOrEqual(t, float32(0), recta(1), "Por los datos introducidos la recta no debería tocar al 0")
 }
