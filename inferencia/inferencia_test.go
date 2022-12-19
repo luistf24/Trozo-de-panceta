@@ -46,3 +46,13 @@ func TestVarianzaY(t *testing.T){
 	assert.LessOrEqual(t, float32(0), prueba[3], "La varianza es siempre postiva")
 }
 
+
+func TestCalcRR(t *testing.T) {
+	x := []float32{1.1, 1.3, 1.4}
+	y := []float32{2.1, 2.1, 2.5}
+
+	recta, err := calcRR(x,y)
+	if err != nil {
+		t.Fatal(err)
+	}
+}
