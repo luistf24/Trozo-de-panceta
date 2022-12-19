@@ -16,8 +16,8 @@ func TestCargaInternal(t *testing.T) {
 
 
 func TestCalcReq(t *testing.T) {
-	var x []float32
-	var y []float32
+	x := []float32{1.1, 1.3, 1.4}
+	y := []float32{2.1, 2.1, 2.5}
 
 	temp, err := calcReq(x,y)
 	prueba = temp
@@ -28,21 +28,21 @@ func TestCalcReq(t *testing.T) {
 
 
 func TestMediaX(t *testing.T) {
-	assert.LessOrEqual(t, 0, prueba[0], "La media de números positivos tiene que ser mayor que 0")
+	assert.LessOrEqual(t, float32(0), prueba[0], "La media de números positivos tiene que ser mayor que 0")
 }
 
 
 func TestMediaY(t *testing.T) {
-	assert.LessOrEqual(t, 0, prueba[1], "La media de números positivos tiene que ser mayor que 0")
+	assert.LessOrEqual(t, float32(0), prueba[1], "La media de números positivos tiene que ser mayor que 0")
 }
 
 
 func TestVarianzaX(t *testing.T) {
-	assert.LessOrEqual(t, 0, prueba[2], "La varianza es siempre positiva")
+	assert.LessOrEqual(t, float32(0), prueba[2], "La varianza es siempre positiva")
 }
 
 
 func TestVarianzaY(t *testing.T){
-	assert.LessOrEqual(t, 0, prueba[3], "La varianza es siempre postiva")
+	assert.LessOrEqual(t, float32(0), prueba[3], "La varianza es siempre postiva")
 }
 
