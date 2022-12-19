@@ -13,3 +13,15 @@ func TestCargaInternal(t *testing.T) {
 }
 
 
+func TestCalcReq(t *testing.T) {
+	var x []float32
+	var y []float32
+
+	_, err := calcReq(x,y)
+
+	if err != nil {
+		t.Fatal(err)
+	}
+}
+
+
