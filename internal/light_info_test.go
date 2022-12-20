@@ -8,13 +8,12 @@ import (
 
 type LightInfoFixture struct {
 	temp LightInfo
-	err error
 }
 
 func NewFixture() LightInfoFixture {
 	var salida = new (LightInfoFixture)
 
-	_, salida.err = salida.temp.generate("../data/test.json")
+	_, _ = salida.temp.generate("../data/test.json")
 
 	return *salida
 }
@@ -23,9 +22,12 @@ var fixture = NewFixture()
 
 
 func TestErrorLightInfo(t *testing.T) {
+	var test = new(LightInfo)
 
-	if fixture.err != nil {
-		t.Fatal(fixture.err)
+	_, err:= test.generate("../data/test.json")
+
+	if err != nil {
+		t.Fatal(err)
 	}
 }
 
