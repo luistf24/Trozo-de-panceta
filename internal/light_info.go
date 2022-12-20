@@ -42,12 +42,12 @@ func (l *LightInfo) generate(file string) (LightInfo, error){
 }
 
 
-func (l *LightInfo) generateTimeBracket(i int) (TimeBracket, error) {
+func (l *LightInfo) generateTimeBracket(tramo int) (TimeBracket, error) {
 
 	var out TimeBracket
-	if(i<24 && i>=0) {
-		out.Hour	= i
-		out.Price	= l.brackets[i]
+	if(tramo<24 && tramo>=0) {
+		out.Hour	= tramo
+		out.Price	= l.brackets[tramo]
 		return out, nil
 	}
 
