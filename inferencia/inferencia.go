@@ -5,6 +5,9 @@ import (
 )
 
 /**
+ * @params: 
+ *	x -> Array con los días desde que empezo almacenarse los días (0,1,...)
+ *	y -> Array con el histórico de precios del tramo 
  * @return: Array con 5 elementos donde se almacena:
  *	salida[0] -> Media de X
  *	salida[1] -> Media de Y
@@ -61,7 +64,7 @@ func calculateRegressionLine(x []float32, y[]float32)(func(int)float32, error) {
 	datos, err := calculateRequisites(x,y)
 
 	if err != nil {
-		return nil, &errorCalcRR{" erro calculando los datos necesarios usando la función calcReq"}
+		return nil, &errorCalcRR{" error calculando los datos necesarios usando la función calcReq"}
 	}
 
 	return func(t int) float32 {
