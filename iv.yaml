@@ -2,9 +2,10 @@ lenguaje: Go
 
 entidad:
   - internal/appliance.go
-  - internal/time_bracket.go
 
 automatizar:
   fichero: Makefile
   orden: make
 
+test:
+  - internal/light_info_test.go

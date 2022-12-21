@@ -10,6 +10,8 @@ En ejecución
 - [Historias de usuario](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-1/docs/user-stories.md)    
 - [Gestor de tareas](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-3/docs/gestor-de-tareas.md)    
 - [Gestor de dependencias](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-3/docs/gestor-de-dependencias.md)    
+- [Test Runner](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-4/docs/test-runners.md)    
+- [Biblioteca de aserciones](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-4/docs/biblioteca-de-aserciones.md)    
 
 ## Problema   
 El precio de la luz varía en distintos tramos horarios a lo largo del día haciendo que el precio por poner un electrodoméstico sea más alto o más bajo en función de la hora. 
@@ -39,3 +41,6 @@ Los principales clientes serán los usuarios de la aplicación los cuales pagara
 		- ``make check`` -> Analiza la sintaxis de todo el código usado en el proyecto     
 		- ``make test`` -> Ejecuta todos los test del fichero, tienen que ser de la forma: nombre_test.go     
 		- ``make help`` -> Imprime un mensaje con todas las opciones disponibles     
+- **Test runner:** Go test    
+- **Biblioteca de aserciones:** Testify    
+

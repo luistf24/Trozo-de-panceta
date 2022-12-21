@@ -5,3 +5,7 @@ type TimeBracket struct {
 	Price float32
 	Appliances []Appliance
 }
+
+func (t TimeBracket) prueba() int{
+	return 1
+}
