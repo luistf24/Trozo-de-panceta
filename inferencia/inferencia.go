@@ -12,12 +12,10 @@ type DatosRegresion struct {
 	covarianza	float32
 }
 
-/**
- * @params: 
- *	x -> Array con los días desde que empezo almacenarse los días (0,1,...)
- *	y -> Array con el histórico de precios del tramo 
- * @return: Struct con las medias, varianza y covarianza:
- */
+// La función calculateRequisites generará un struct con todos los datos necesarios
+// para calcular una recta de regresión.
+// Los parámetros de entrada son x e y dos arrays float32 que serán los datos obtenidos
+// en el caso del proyecto x es los días e y son los precios de un tramo en esos días
 func calculateRequisites(x []float32, y[]float32)(DatosRegresion, error) {
 	var salida = new(DatosRegresion)
 	tamX := len(x)
@@ -62,7 +60,9 @@ func calculateRequisites(x []float32, y[]float32)(DatosRegresion, error) {
 }
 
 
-
+// Esta función genera a partir de dos array de datos, en el caso del proyecto serán días
+// y precios de un tramo y devolverá una función que recibe como entrada un día y devuelve 
+// una aproximación del tramo
 func calculatePredictFunction(x []float32, y[]float32)(func(int)float32, error) {
 	datos, err := calculateRequisites(x,y)
 
