@@ -17,7 +17,6 @@ WORKDIR /app/test
 USER test_obj-5
 
 COPY go.mod /app/test
-COPY go.sum /app/test 
 
 RUN go mod download
 
