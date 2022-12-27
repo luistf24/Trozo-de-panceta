@@ -24,5 +24,4 @@ RUN go mod download
 # y el nuevo usario tiene el acceso denegado
 ENV GOCACHE=/tmp/
 
-
 ENTRYPOINT ["make", "test"]
