@@ -1,13 +1,13 @@
-name: "Tests"
+name: "Tests docker"
 on:
   push:
-    branches:
-      - main
-      - objetivo-5
-  jobs:
-    ops-on-source:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Prueba Contenedor
-          run: docker run -t -v `pwd`:/app/test luistf24/trozo-de-panceta 
-    
+    - main
+    - objetivo-5
+
+jobs:
+  docker-image-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: La imagen es correcta
+        run: docker run -t -v `pwd`:/app/test luistf24/trozo-de-panceta 
