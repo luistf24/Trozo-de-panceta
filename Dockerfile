@@ -16,12 +16,12 @@ WORKDIR /app/test
 # Cambio al nuevo usuario
 USER test_obj-5
 
-COPY go.mod /app/test
-
-RUN go mod download
-
 # Modificamos la variable global GOCACHE ya que si no, los test se ejecutan en .cache
 # y el nuevo usario tiene el acceso denegado
 ENV GOCACHE=/tmp/
+
+COPY go.mod /app/test
+
+RUN go mod download
 
 ENTRYPOINT ["make", "test"]
