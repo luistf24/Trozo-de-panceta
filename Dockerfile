@@ -21,6 +21,7 @@ USER test_obj-5
 ENV GOCACHE=/tmp/
 
 COPY go.mod /app/test
+COPY go.sum /app/test
 
 RUN go mod download
 
