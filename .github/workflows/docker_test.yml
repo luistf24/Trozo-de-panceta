@@ -1,0 +1,13 @@
+name: "Tests"
+on:
+  push:
+    branches:
+      - main
+      - objetivo-5
+  jobs:
+    ops-on-source:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Prueba Contenedor
+          run: docker run -t -v `pwd`:/app/test luistf24/trozo-de-panceta 
+    
