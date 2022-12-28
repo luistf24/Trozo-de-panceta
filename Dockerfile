@@ -6,6 +6,7 @@ RUN mkdir -p /app/test
 
 RUN adduser --disabled-password tests \
 	&& chown -R tests:tests /app/ \
+	&& apk update \
 	&& apk add build-base
 
 WORKDIR /app/test
