@@ -5,9 +5,8 @@ LABEL maintainer="luis.tormo24@gmail.com"
 RUN mkdir -p /app/test
 
 RUN adduser --disabled-password tests \
-	&& chown -R tests:tests /app/
-
-RUN apk add build-base
+	&& chown -R tests:tests /app/ \
+	&& apk add build-base
 
 WORKDIR /app/test
 
