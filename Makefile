@@ -2,9 +2,6 @@
 # MAKE FILE TROZO-DE-PANCETA #
 ##############################
 
-# shell para el que está escrito este Makefile
-#SHELL = /bin/bash
-
 
 #
 # Paths y nombres de directorios
