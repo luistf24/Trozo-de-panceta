@@ -18,7 +18,6 @@ USER tests
 ENV GOCACHE=/tmp/
 
 COPY go.mod /app/test
-COPY go.sum /app/test
 
 RUN go mod download
 
