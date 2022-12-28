@@ -11,11 +11,8 @@ RUN adduser --disabled-password tests \
 
 WORKDIR /app/test
 
-# Cambio al nuevo usuario
 USER tests
 
-# Modificamos la variable global GOCACHE ya que si no, los test se ejecutan en .cache
-# y el nuevo usario tiene el acceso denegado
 ENV GOCACHE=/tmp/
 
 COPY go.mod /app/test
