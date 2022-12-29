@@ -2,9 +2,6 @@
 # MAKE FILE TROZO-DE-PANCETA #
 ##############################
 
-# shell para el que está escrito este Makefile
-SHELL = /bin/bash
-
 
 #
 # Paths y nombres de directorios
@@ -55,6 +52,9 @@ check: # Comprobación de la sintaxis
 
 test: # Ejecución de todos los tests del proyecto
 	@echo -e "Ejecutando tests ..."
-	go test ./...
+	go test ./... -v
 
+docker: # Ejecución desde un docker
+	@echo -e "Ejecutando desde docker ..."
+	docker run -u 1001 -t -v `pwd`:/app/test luistf24/trozo-de-panceta
 

@@ -12,6 +12,7 @@ En ejecución
 - [Gestor de dependencias](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-3/docs/gestor-de-dependencias.md)    
 - [Test Runner](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-4/docs/test-runners.md)    
 - [Biblioteca de aserciones](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-4/docs/biblioteca-de-aserciones.md)    
+- [Contenedores](https://github.com/luistf24/Trozo-de-panceta/blob/objetivo-5/docs/docker.md)     
 
 ## Problema   
 El precio de la luz varía en distintos tramos horarios a lo largo del día haciendo que el precio por poner un electrodoméstico sea más alto o más bajo en función de la hora. 
