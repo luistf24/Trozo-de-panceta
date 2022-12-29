@@ -1,4 +1,4 @@
-FROM golang:1.19-alpine
+FROM golang:1.20-rc-alpine
 LABEL maintainer="luis.tormo24@gmail.com"
 
 # Creamos la carpeta /app/test
