@@ -27,7 +27,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/trozo-de-panceta:latest
+          tags: luistf24/trozo-de-panceta:latest
 
       - name: Test Docker
         run: docker run -t -v `pwd`:/app/test luistf24/trozo-de-panceta 
