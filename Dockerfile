@@ -17,6 +17,7 @@ ENV GOCACHE=/tmp/
 
 COPY go.mod /app/test
 
-RUN go mod download
+RUN go mod download \
+	&& rm go.mod
 
 ENTRYPOINT ["make", "test"]
