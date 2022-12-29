@@ -1,9 +1,11 @@
 name: "Tests docker"
 on:
-  push:
+  pull_request:
     branches:
       - main
-      - objetivo-5
+  push:
+    paths:
+      - "Dockerfile"
 
 jobs:
   docker-image-test:
