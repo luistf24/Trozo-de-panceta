@@ -1,5 +1,5 @@
 # Integración Continua
-Para la búsqueda me he centrado en aquellos sistemas de integración continua que se puedan usar con el leguaje del proyecto que es go, y para la elección me he basado en que se puedan utilizar desde la nube, permitiendome así ahorrarme la instalación de este y además de que no dependa de mi ordenador, lo extendido que esté su uso, ya que en la búsqueda de muchos aparecen sus clientes más relevantes, que se puedan integrar fácilmente con github, que no sean de pago y los permisos que piden al integrarse en gihub.
+Para la búsqueda me he centrado en aquellos sistemas de integración continua que se puedan usar con el leguaje del proyecto que es go, y para la elección me he basado en que se puedan utilizar desde la nube, permitiendome así ahorrarme la instalación de este y además de que no dependa de mi ordenador, que se puedan integrar fácilmente con github, que no sean de pago y los permisos que piden al integrarse en github.
 
 ## **Búsqueda de CI:**
 En la búsqueda de CI he encontrado: [Jekins](https://www.jenkins.io/), [CircleCI](https://circleci.com/), [Travis](https://circleci.com/), [AppVeyor](https://www.appveyor.com/), [Cirrus](https://github.com/apps/cirrus-ci) y las propias [GithubActions](https://docs.github.com/es/actions)    
@@ -27,4 +27,4 @@ Siguiendo los criterios de elección:
 
 Por lo que me he quedado con: Cirrus, CircleCI y GitHub Actions. Dado que hay que implementar varios test, me he decantado por implementar:    
 - Un test de versiones del lenguage con Cirrus ya que se pide evitar CircleCI en los hitos.     
-- Un test que ejecuta los test desarrollados en un docker, esto lo implementé en el objtivo 5 con GitHub Actions.    
+- Un test que ejecuta los test desarrollados en un docker, esto lo implementé en el objetivo 5 con GitHub Actions.    
