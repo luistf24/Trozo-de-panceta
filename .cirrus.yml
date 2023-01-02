@@ -2,7 +2,6 @@ version_check_task:
   name: Test versiones go
   env:
     matrix:
-      - GO_VERSION: 1.20-rc
       - GO_VERSION: 1.19.4
       - GO_VERSION: 1.18.9
   container:
