@@ -2,8 +2,8 @@ version_check_task:
   name: Test versiones go
   env:
     matrix:
-      - GO_VERSION: 1.19.4
-      - GO_VERSION: 1.18.9
+      - GO_VERSION: 1.19
+      - GO_VERSION: 1.18
   container:
     image: golang:${GO_VERSION}-alpine
   get_script: go get ./...
