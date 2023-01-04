@@ -1,5 +1,5 @@
 # Integración Continua     
-Para la búsqueda me he centrado en aquellos sistemas de integración continua que se puedan usar con el leguaje del proyecto, que estén integrandos en la nube y que se puedan usar en GitHub. Dentro de estos he seleccionado para usar en el proyecto aquellos que sean gratuitos, que no se excedan en los permisos para vincularlos con GitHub y que no demanden ciertos datos personales como puede ser el número de tarjeta.   
+Para la búsqueda me he centrado en aquellos sistemas de integración continua que se puedan usar con el lenguaje del proyecto, que estén integrados en la nube y que se puedan usar en GitHub. Dentro de estos he seleccionado para usar en el proyecto aquellos que sean gratuitos, que no se excedan en los permisos para vincularlos con GitHub y que no demanden ciertos datos personales como puede ser el número de tarjeta.   
 
 ## **Búsqueda de CI:**    
 En la búsqueda de CI he encontrado: [AppVeyor](https://www.appveyor.com/), [Cirrus](https://github.com/apps/cirrus-ci) y las propias [Github Actions](https://docs.github.com/es/actions)    
