@@ -1,8 +1,11 @@
 name: "Tests docker"
+
 on:
   pull_request:
     branches:
       - main
+    paths:
+      - '**.go'
 
 jobs:
   docker-image-test:
