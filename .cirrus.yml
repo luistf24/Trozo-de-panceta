@@ -6,6 +6,4 @@ version_check_task:
       - GO_VERSION: 1.18
   container:
     image: golang:${GO_VERSION}-alpine
-  get_script: make installdeps
-  build_script: make build
-  tests_script: make test
+  script: make test
