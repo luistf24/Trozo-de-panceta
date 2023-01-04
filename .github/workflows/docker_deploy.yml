@@ -1,11 +1,9 @@
 name: "Despliegue docker"
 on:
-  pull_request:
-    branches:
-      - main
   push:
     paths:
-      - "Dockerfile"
+      - 'Dockerfile'
+      - 'go.mod'
 
 jobs:
   docker-image-test:
