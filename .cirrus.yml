@@ -6,8 +6,6 @@ version_check_task:
       - GO_VERSION: 1.18
   container:
     image: golang:${GO_VERSION}-alpine
-  setup_script:
-    - apk add -update make
-  get_script: make installdeps
-  build_script: make build
+  get_script: /usr/bin/make installdeps
+  build_script: /usr/bin/make build
   test_script: CGO_ENABLED=0 go test ./...
