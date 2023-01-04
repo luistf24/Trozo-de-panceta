@@ -3,9 +3,6 @@ on:
   pull_request:
     branches:
       - main
-  push:
-    paths:
-      - "Dockerfile"
 
 jobs:
   docker-image-test:
@@ -14,12 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      - name: Login Docker
-        uses: docker/login-action@v2
-        with: 
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Test Docker
         run: docker run -t -v `pwd`:/app/test luistf24/trozo-de-panceta 
