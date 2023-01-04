@@ -13,5 +13,5 @@ En la búsqueda de CI he encontrado: [Travis](https://www.travis-ci.com/), [AppV
 - **GitHub Actions:** Sistema de acciones que se ejecutan cada vez que sucede algún evento en el sistema, son muy amplias y van integradas en el propio repositorio por lo que es muy fácil de integrar.    
 
 Siguiendo los criterios de selección me he quedado con: **Cirrus** y **GitHub Actions**. Dado que hay que implementar varios test, me he decantado por implementar:    
-- Un test de versiones del lenguage con **Cirrus**.     
+- Un test de versiones del lenguage con **Cirrus** en el se testearan las versiones 1.18 y 1.19 ya que la 1.20 es la que se usa en el docker actual.     
 - Un test que ejecuta los tests unitarios desarrollados anteriormente con **GitHub Actions**.    
