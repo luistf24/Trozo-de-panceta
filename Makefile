@@ -28,7 +28,7 @@ help: # Imprime mensaje con las distintas opciones del Makefile
 
 build: # Construir el programa principal
 	@echo -e "Construyendo el proyecto ..."
-	go build 
+	go build ./...
 
 
 installdeps: # Instalación de las dependencias

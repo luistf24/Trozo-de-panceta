@@ -1,0 +1,10 @@
+version_check_task:
+  name: Test versiones go
+  env:
+    matrix:
+      - GO_VERSION: 1.19
+      - GO_VERSION: 1.18
+  container:
+    image: golang:${GO_VERSION}-bullseye
+  build_script: make build
+  test_script: make test

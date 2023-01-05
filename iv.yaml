@@ -1,11 +1,10 @@
 lenguaje: Go
-
 entidad:
   - internal/appliance.go
-
 automatizar:
   fichero: Makefile
   orden: make
-
 test:
   - internal/light_info_test.go
+CI: .cirrus.yml
+
