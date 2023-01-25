@@ -7,4 +7,5 @@ automatizar:
 test:
   - internal/light_info_test.go
 CI: .cirrus.yml
+configuracion: app.env
 
