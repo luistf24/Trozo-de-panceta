@@ -8,4 +8,4 @@ Además será importante que esté bien documentada.
 - [Logrus:](https://github.com/sirupsen/logrus) Al igual que las anteriores es una biblioteca de loggin estructurada con el inconveniente de que está en *maintenance-mode* por lo que no añadirá nuevas mejoras y se limitarán solo a dar soporte para seguridad, por lo que queda descartada.   
 - [Apex/log:](https://github.com/apex/log) Es una biblioteca de loggin estructurada pero al contrario que las demás está muy desactualizada y apenas hay documentación acerca de esta, por lo que queda descartada.   
 
-Al final la biblioteca por la que me he descartado es **Zerolog** ya que es la única que cumple todos los requisitos.   
+Al final la biblioteca por la que me he decantado es **Zerolog** ya que es la única que cumple todos los requisitos.   
