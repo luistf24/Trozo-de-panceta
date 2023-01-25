@@ -20,3 +20,12 @@ type errorGenerateTimeBracket struct {
 func (e *errorGenerateTimeBracket) Error() string {
 	return fmt.Sprintf("Error en generateTimeBracket debido a... %s", e.data)
 }
+
+// Error generando una nueva configuración
+type errorGenerateConfig struct {
+	data string
+}
+
+func (e *errorGenerateConfig) Error() string {
+	return fmt.Sprintf("Error generando una configuración debido a... %s", e.data)
+}
