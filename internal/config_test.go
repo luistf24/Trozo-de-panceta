@@ -13,5 +13,5 @@ func TestConfig(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	assert.Equal(t, "prueba", test.SECRET, "No se ha obtenido correctamente el secreto")
+	assert.Equal(t, 1, test.LogLevel, "No se ha obtenido correctamente el secreto")
 }
