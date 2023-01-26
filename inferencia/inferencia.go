@@ -2,6 +2,7 @@ package inferencia
 
 import (
 	"math"
+	"Trozo-de-panceta/internal"
 )
 
 type DatosRegresion struct {
@@ -56,6 +57,7 @@ func calculateRequisites(x []float32, y[]float32)(DatosRegresion, error) {
 	}
 	salida.covarianza = tempx/float32(tamX)
 
+	internal.Get().Info().Msg("Se ha ejecutado la función calculateRequisites")
 	return *salida, nil
 }
 
@@ -74,6 +76,7 @@ func calculatePredictFunction(x []float32, y[]float32)(func(int)float32, error) 
 		return nil, &errorCalcRR{" error, la varianza de X no puede ser 0"}
 	}
 
+	internal.Get().Info().Msg("Se ha generado una recta de regresión")
 	return func(t int) float32 {
         return datos.covarianza*(float32(t)-datos.mediaX)/datos.varianzaX+datos.mediaY
 	}, nil
