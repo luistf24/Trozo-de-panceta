@@ -1,6 +1,7 @@
 package internal
 
 import (
+	"io"
 	"os"
 	"time"
 
@@ -26,7 +27,7 @@ func Get() *zerolog.Logger {
 		logLevel = config.LogLevel
 	}
 
-	outputC := zerolog.ConsoleWriter{
+	var output io.Writer = zerolog.ConsoleWriter{
 		Out:		os.Stdout,
 		TimeFormat: time.RFC3339,
 	}
@@ -37,19 +38,13 @@ func Get() *zerolog.Logger {
 			os.O_APPEND|os.O_CREATE|os.O_WRONLY,
 			0664,
 		)
-		if err == nil {
-			logger := zerolog.New(file).
-				Level(zerolog.Level(logLevel)).
-				With().
-				Timestamp().
-				Logger()
 
-			log = &logger
-			return log
+		if err == nil {
+            output = zerolog.MultiLevelWriter(file)
 		}
 	}
 
-	logger := zerolog.New(outputC).
+	logger := zerolog.New(output).
 		Level(zerolog.Level(logLevel)).
 		With().
 		Timestamp().
