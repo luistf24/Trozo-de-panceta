@@ -48,6 +48,8 @@ func (l *LightInfo) generateTimeBracket(tramo int) (TimeBracket, error) {
 	if(tramo<24 && tramo>=0) {
 		out.Hour	= tramo
 		out.Price	= l.brackets[tramo]
+
+		Get().Info().Msg("Se ha generado un time bracket")
 		return out, nil
 	}
 
